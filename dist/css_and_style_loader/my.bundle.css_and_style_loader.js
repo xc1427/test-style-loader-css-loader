@@ -493,12 +493,16 @@ module.exports = function (list, options) {
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./log */ "./src/log.js");
 __webpack_require__(/*! ./style.css */ "./src/style.css");
-const { log } = __webpack_require__(/*! ./log */ "./src/log.js");
-log('I am here');
+// const { log } = require('./log');
+
+Object(_log__WEBPACK_IMPORTED_MODULE_0__["log"])('I am here');
 
 /***/ }),
 
@@ -506,14 +510,21 @@ log('I am here');
 /*!********************!*\
   !*** ./src/log.js ***!
   \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: log */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = {
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "log", function() { return log; });
+/* module.exports = {
   log: function(text) {
     console.log(text);
   },
-};
+}; */
+
+const log = function(text) {
+  console.log(text);
+}
 
 /***/ }),
 
@@ -549,4 +560,4 @@ module.exports = exported;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=my.bundle.js.map
+//# sourceMappingURL=my.bundle.css_and_style_loader.js.map
