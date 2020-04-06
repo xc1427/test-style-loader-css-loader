@@ -1,3 +1,3 @@
 require('./style.css');
-
-console.log('I am here');
+const { log } = require('./log');
+log('I am here');
